@@ -1,20 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nitya Chidambaram</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitya Chidambaram | AI, Innovation, and the Future of Work</title>
+    <meta name="description" content="Helping teams and founders unlock productivity using AI and scalable operations design. 14+ years of experience across Amazon, Practo, and ShopBack.">
+    <meta name="keywords" content="AI operations, productivity, systems thinking, innovation, operations design, Nitya Chidambaram">
+    <meta name="author" content="Nitya Chidambaram">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nitya Chidambaram | AI, Innovation, and the Future of Work">
+    <meta property="og:description" content="Helping teams and founders unlock productivity using AI and scalable operations design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nityac.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nitya Chidambaram | AI, Innovation, and the Future of Work">
+    <meta name="twitter:description" content="Helping teams and founders unlock productivity using AI and scalable operations design.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nitya Chidambaram",
+      "jobTitle": "Operations & AI Strategy Leader",
+      "description": "Helping teams and founders unlock productivity using AI and scalable operations design",
+      "url": "https://nityac.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/nityac"
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --dark-navy: #0a0a1f;
+            --navy: #1a1a3e;
+            --purple: #7c3aed;
+            --pink: #ec4899;
+            --cyan: #06b6d4;
+            --text-primary: #ffffff;
+            --text-secondary: #cbd5e1;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--navy) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Background */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            z-index: 0;
+            opacity: 0.6;
+            background: 
+                radial-gradient(circle at 20% 50%, var(--purple) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--pink) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--cyan) 0%, transparent 50%);
+            filter: blur(80px);
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-tagline {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--purple);
+            color: white;
+            border-color: var(--purple);
+        }
+        
+        .btn-primary:hover {
+            background: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(124, 58, 237, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--pink);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(236, 72, 153, 0.2);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 900px;
+        }
+        
+        .about-content p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: var(--purple);
+            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2);
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--cyan);
+        }
+        
+        .card-tag {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+        
+        /* Two Column Cards */
+        .two-column-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .large-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            transition: all 0.3s ease;
+        }
+        
+        .large-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.3);
+        }
+        
+        .large-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Hidden Gems with Icons */
+        .gems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .gem-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .gem-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--cyan);
+        }
+        
+        .gem-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* Collaborate Section */
+        .collaborate {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+            border-radius: 24px;
+            padding: 4rem;
+            margin: 4rem 0;
+        }
+        
+        .collaborate h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .collaborate-intro {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .collaborate ul {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .collaborate li {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .collaborate li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--pink);
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .footer-links a {
+            color: var(--purple);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--pink);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                min-height: auto;
+                padding: 4rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.25rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .two-column-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .collaborate {
+                padding: 2rem;
+            }
+            
+            .collaborate h2 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                justify-content: center;
+            }
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Read More Link */
+        .read-more {
+            color: var(--pink);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            transition: gap 0.3s ease;
+        }
+        
+        .read-more:hover {
+            gap: 1rem;
+        }
+        
+        .read-more:after {
+            content: "→";
+        }
+    </style>
 </head>
 <body>
-  <h1>Nitya Chidambaram</h1>
-  <p>Tracking innovations, AI, and hidden gems in tech & lifestyle.</p>
-
-  <h2>About Me</h2>
-  <p>Hi, I’m Nitya. I explore startups, AI, and emerging trends in tech & lifestyle.</p>
-
-  <h2>Connect</h2>
-  <p>
-    LinkedIn: <a href="https://www.linkedin.com/in/nitya-chidambaram" target="_blank">nitya-chidambaram</a><br>
-  </p>
+    <div class="bg-pattern"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Nitya Chidambaram</h1>
+                <p class="hero-tagline">Curious mind, exploring AI, innovation, and the future of work</p>
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/in/nityac" class="btn btn-primary" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#blog" class="btn btn-secondary">Read My Thoughts</a>
+                    <a href="https://forms.gle/r2omiJ5RFoEz9ztq8" class="btn btn-secondary" target="_blank" rel="noopener">Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>I help teams and founders unlock productivity using AI and scalable operations design. My work blends strategy, systems thinking, and technology to turn chaos into clarity.</p>
+                
+                <p>With 14+ years of experience across Amazon, Practo, and ShopBack, I've learned that the best solutions emerge from curiosity, clear leadership, and relentless focus on what actually moves the needle.</p>
+                
+                <p>I believe the future belongs to those who can think in systems while staying deeply human in their approach.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What I'm Building Section -->
+    <section id="building">
+        <div class="container">
+            <h2 class="section-title">What I'm Building</h2>
+            <div class="two-column-cards">
+                <div class="large-card">
+                    <h3>Ops × AI Platform</h3>
+                    <p>A low-code AI platform for operations teams to automate workflows using prompts, not code. Think of it as turning your team's tribal knowledge into intelligent systems.</p>
+                </div>
+                <div class="large-card">
+                    <h3>The Vision</h3>
+                    <p>Every ops professional should be able to build AI-powered workflows without waiting for engineering resources. We're democratizing automation for the people who know processes best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Thoughts</h2>
+            <p class="section-subtitle">Ideas worth exploring, from the intersection of AI, operations, and human potential.</p>
+            <div class="cards-grid">
+                <a href="/blog/ops-ai-frontier.html" class="card">
+                    <h3>Why Ops Will Be the Next AI Frontier</h3>
+                    <p>Operations teams hold the keys to organizational efficiency, yet they're often the last to get AI tools. This is about to change dramatically.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">AI</span>
+                        <span class="card-tag">Operations</span>
+                    </div>
+                    <span class="read-more">Read article</span>
+                </a>
+                <a href="/blog/manual-decision-making.html" class="card">
+                    <h3>The Hidden Cost of Manual Decision-Making</h3>
+                    <p>Every manual decision your team makes costs more than you think. Here's how to identify and automate the decisions that drain your team's energy.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Productivity</span>
+                        <span class="card-tag">Automation</span>
+                    </div>
+                    <span class="read-more">Read article</span>
+                </a>
+                <a href="/blog/scaling-13-markets.html" class="card">
+                    <h3>What I Learned from Scaling Across 13 Markets</h3>
+                    <p>Scaling operations isn't just about processes, it's about building systems that adapt to local contexts while maintaining global consistency.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Scaling</span>
+                        <span class="card-tag">Strategy</span>
+                    </div>
+                    <span class="read-more">Read article</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hidden Gems Section -->
+    <section id="gems">
+        <div class="container">
+            <h2 class="section-title">Hidden Gems</h2>
+            <p class="section-subtitle">Things that inspired me this week—tools, essays, and discoveries worth sharing.</p>
+            <div class="gems-grid">
+                <div class="gem-card">
+                    <span class="gem-icon">💡</span>
+                    <h3>Cursor AI Editor</h3>
+                    <p>This AI-powered code editor is changing how we think about programming. Even non-technical founders should pay attention to this shift.</p>
+                </div>
+                <div class="gem-card">
+                    <span class="gem-icon">📖</span>
+                    <h3>"The Mom Test" Revisited</h3>
+                    <p>Rob Fitzpatrick's approach to customer interviews remains the gold standard. Essential reading for anyone building products people actually want.</p>
+                </div>
+                <div class="gem-card">
+                    <span class="gem-icon">👤</span>
+                    <h3>Linear's Design Philosophy</h3>
+                    <p>Their approach to building tools that feel fast and intuitive offers lessons for every product team focused on user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Collaborate Section -->
+    <section id="collaborate">
+        <div class="container">
+            <div class="collaborate">
+                <h2>Let's Collaborate</h2>
+                <p class="collaborate-intro">I'd love to hear from you—whether it's an idea, collaboration, or thought to exchange.</p>
+                <p><strong>Reach out if you're:</strong></p>
+                <ul>
+                    <li>Building AI tools for operations</li>
+                    <li>Scaling systems across markets</li>
+                    <li>Interested in AEO and discovery</li>
+                    <li>Curious about the future of work</li>
+                    <li>Looking for strategic partnership</li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="https://forms.gle/r2omiJ5RFoEz9ztq8" class="btn btn-primary" target="_blank" rel="noopener">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nitya Chidambaram</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/nityac" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
